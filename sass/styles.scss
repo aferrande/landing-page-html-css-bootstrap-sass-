@@ -1,0 +1,91 @@
+//I could have made it into separate files and import into here, but as it is a pretty simple and project on the CSS side, I just did it in one go in this file.
+//commented options are if you want to fulfil the bottom of the page as a footer, also you would need to change justifyContent and alignItems to space-between on ".copyright".
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  background-image: url(../images/bgimg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0c1522;
+  color: white;
+}
+
+.bgColor {
+  background-color: #131212;
+}
+
+.btnClick {
+  &:active {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+    filter: brightness(0.58);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  width: 30rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.agents {
+  text-align: justify;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  // bottom: 0.3rem;
+  // height: 3rem;
+
+  // .sizingHelper {
+  //   width: 33%;
+  // }
+
+  p {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    // width: 33%;
+    color: #ff4043;
+  }
+}
+
+.contactInfo {
+  // display: flex;
+  // justify-content: flex-end;
+  // width: 33%;
+  gap: 5px;
+
+  a {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    color: #ff4043;
+  }
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: auto;
+  }
+}
