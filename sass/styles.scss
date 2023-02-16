@@ -1,5 +1,7 @@
 //I could have made it into separate files and import into here, but as it is a pretty simple and project on the CSS side, I just did it in one go in this file.
 //commented options are if you want to fulfil the bottom of the page as a footer, also you would need to change justifyContent and alignItems to space-between on ".copyright".
+//Could have compressed the end css with sass --watch sass/styles.scss:sttyles/styles.css --style compressed
+
 
 * {
   margin: 0;
